@@ -50,3 +50,7 @@ dist/**
 
 # Files
 notes.txt
+test.py
+
+#Temp Ignore
+utils.py
