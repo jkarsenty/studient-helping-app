@@ -24,6 +24,10 @@ def student_characteristics():
     student_char = pd.DataFrame(data_dict,index=[0])
     return student_char
 
-df = student_characteristics()
+df_slider = student_characteristics()
 st.subheader("On cherche a savoir si cet eleve necessite une attention particuliere")
-st.write(df)
+st.write(df_slider)
+
+prediction = "necessite de l'attention" #en pratique il s'agit ici de la prediction du modele avec clf.predict(df_slider)
+st.subheader("L'etudiant choisi :")
+st.write(prediction)
