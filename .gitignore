@@ -52,5 +52,10 @@ dist/**
 notes.txt
 test.py
 
+# Folder
+model
+
 #Temp Ignore
 utils.py
+School_Level_EDA.ipynb
+data_treatment/eda.py
