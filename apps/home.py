@@ -1,3 +1,4 @@
+import numpy as np
 import streamlit as st
 
 def main_header():
@@ -8,14 +9,14 @@ def main_header():
     ''')
 
 
-def main_dashboard(config_choice = 1):
+def main_dashboard():
     
     pass
 
 
-def main_prediction(df_slider=""):
+def main_prediction(df_slider, df_init, model):
     st.write(df_slider)
 
-    prediction = "necessite de l'attention" #en pratique il s'agit ici de la prediction du modele avec clf.predict(df_slider)
+    prediction_rgs = np.round(model.predict(df_slider))
     st.subheader("L'etudiant choisi :")
-    st.write(prediction)
+    st.write(prediction_rgs)
