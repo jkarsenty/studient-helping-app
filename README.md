@@ -7,11 +7,6 @@ Dashboard Application that allows School to help student in a better way.
 
 ## How to start
 
-- To install the dependencies run :  
-```
-python -m pip install requirements.txt
-```
-
 - To build the app run :
 ```
 docker build . -t school-app:0.1
