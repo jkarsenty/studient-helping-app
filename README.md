@@ -12,7 +12,12 @@ Dashboard Application that allows School to help student in a better way.
 python -m pip install requirements.txt
 ```
 
-- To start the app you can run :  
+- To build the app run :
 ```
-streamlit run main.py
+docker build . -t school-app:0.1
+```
+
+- To start the app you run :  
+```
+docker run -p 8501:8501 school-app:0.1
 ```
